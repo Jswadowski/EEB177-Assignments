@@ -6,10 +6,10 @@ As species of the same genus have usually, though by no means invariably, some s
 ANSWER:______________\bs\S*__________________________________
 
 2.  Write a regular expression that will find the last word of every sentence. Your regular expression should capture the whole last word - not just the first or last letter! (Hint: note that not all sentences end with a period- one ends in an `!`)   
-ANSWER:________________________________________________
+ANSWER:__________________(\w+)\W*$_____(not correct)_________________________
 
 3.  Write a regular expression that will find the first word of every sentence. Your regular expression should match the whole first word- not just the first letter!    
-ANSWER:________________________________________________
+ANSWER:________________^(\S*)\w+______(not correct)__________________________
 
 4.  Write a regular expression that will match the **sentence** containing the phrase "Asiatic cockroach".  
 ANSWER:_____________.*"Asiatic cockroach".*___________________________________  
