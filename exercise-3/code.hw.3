@@ -1,0 +1,89 @@
+2) 
+a = 3
+b = 17
+c = a + b
+print(c)
+favorite_animal = "lion"
+favorite_dinners = "Thanksgiving" + "steak and potatoes" + "chicken cutlets"
+print(favorite_dinners)
+num_fav_dinners = len(favorite_dinners)
+print(num_fav_dinners)
+
+3)def hw3_function(int):
+        if (int < 5 ):
+            print("Brr! It's cold!")
+        if (int 5 < x < 25):
+            print("It's pretty warm!")
+        if (int > 25):
+            print("What a pleasant temperature!")
+        else:
+            print("Error")
+
+4)
+import re
+my_dna = "ATAATTAACGGAGCTTATTA"
+if re.search(r"GAAG(A|T|G|C) or GTTG(A|T|G|C), dna"):
+    print("restriction site found!")
+
+
+import random
+def rps():
+    computer_choice = random.randint(1,3)
+    if computer_choice == 1:
+        computer_choice_rock()
+    elif computer_choice == 2:
+        computer_choice_paper()
+    else:
+        computer_choice_scissors()
+def computer_choice_rock():
+    user_choice = raw_input ("Please enter 'rock', 'paper', 'scissors': ")
+    if user_choice == "rock":
+        print "You picked rock; Computer picked rock; this is a tie!"
+	try_again()
+    if user_choice == "paper":
+        print "You picked paper; Computer picked rock; +1 for You!"
+	try_again()
+    if user_choice == "scissors":
+	print "You picked scissors; Computer picked rock; +1 for Computer!"
+	try_again()
+    else:
+	print "Please enter a correct input"
+	computer_choice_rock()
+def computer_choice_paper():
+    user_choice = raw_input ("Please enter 'rock', 'paper', 'scissors': ")
+    if user_choice == "rock":
+        print "You picked rock; Computer picked paper; +1 for Computer!"
+	try_again()
+    if user_choice == "paper":
+        print "You picked paper; Computer picked paper; this is a tie!"
+	try_again()
+    if user_choice == "scissors":
+	print "You picked scissors; Computer picked paper; +1 for You!"
+	try_again()
+    else:
+	print "Please enter a correct input"
+	computer_choice_paper()
+def computer_choice_scissors():
+    user_choice = raw_input ("Please enter 'rock', 'paper', 'scissors': ")
+    if user_choice == "rock":
+        print "You picked rock; Computer picked scissors; +1 for You!"
+	try_again()
+    if user_choice == "paper":
+        print "You picked paper; Computer picked scissors; +1 for Computer!"
+	try_again()
+    if user_choice == "scissors":
+	print "You picked scissors; Computer picked scissors; this is a tie!"
+	try_again()
+    else:
+	print "Please enter a correct input"
+	computer_choice_scissors()
+def try_again():
+    choice = raw_input("Play again? y/n ")
+    if choice == "y":
+        rps()
+    elif choice == "n":
+        print "Thanks for playing!"
+        quit ()
+    else:
+        print "Try again"
+        try_again()
